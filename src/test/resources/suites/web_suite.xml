@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="UI automated tests" verbose="1" parallel="methods" thread-count="1">
+
+    <test name="Home page tests">
+        <classes>
+            <class name="web.HomePageTest"/>
+        </classes>
+    </test>
+    <test name="Login page tests">
+        <classes>
+            <class name="web.LoginPageTest"/>
+        </classes>
+    </test>
+    <test name="New account creation tests">
+        <classes>
+            <class name="web.NewAccountCreationTest"/>
+        </classes>
+    </test>
+    <test name="Checkout tests">
+        <classes>
+            <class name="web.CheckoutTest"/>
+        </classes>
+    </test>
+</suite>

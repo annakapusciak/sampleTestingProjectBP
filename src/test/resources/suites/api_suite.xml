@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="API automated tests" verbose="1" parallel="methods" thread-count="1">
+
+    <test name="Pets operations">
+        <classes>
+            <class name="api.PetsEndpointTest"/>
+        </classes>
+    </test>
+    <test name="Pets operations - negative impact checks">
+        <classes>
+            <class name="api.PetsEndpointNegativeImpactTest"/>
+        </classes>
+    </test>
+</suite>
