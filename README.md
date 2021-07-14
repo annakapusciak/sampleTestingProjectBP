@@ -165,14 +165,12 @@ Region: production
 Description:
 
 - Actual: After clicking on Logout button on My Account page user is not logged out and redirected to 404 - not existing
-  page (screenshot attached)
+  page
 - Expected: After clicking on Logout button on My Account page user should be successfully logged out and redirected to
   the login page.
 - Workaround: To close the session and logout user needs to close browser using which was logged into the page.
 - Steps to reproduce: Login using valid credentials and once successfully signed in click on Logout button on My Account
   page.
-
-Attachments: screen
 
 ## 2. Automated tests for a REST API service
 
@@ -244,7 +242,7 @@ mvn clean -Dtest=PetsEndpointTest -PAPI_tests test
 #### 2. From any IDE
 
 Tests can be run from any IDE like i.e. [IntelliJ IDEA](https://www.jetbrains.com/idea/). Then each `*Test.java` class
-from `src/test/java/web` package can be run using `run` option after clicking right mouse button on class name.
+from `src/test/java/api` package can be run using `run` option after clicking right mouse button on class name.
 
 ## Reporting
 
