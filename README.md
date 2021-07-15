@@ -72,7 +72,8 @@ under [src/test/java/web](src/test/java/web).
 
 UI tests can be run in three ways:
 
-#### 1. GitHub CI tool
+#### 1. GitHub CI tool using maven
+[![Java CI with Maven](https://github.com/annakapusciak/sampleTestingProjectBP/actions/workflows/maven_UI.yml/badge.svg)](https://github.com/annakapusciak/sampleTestingProjectBP/actions/workflows/maven_UI.yml)
 
 #### 2. From command line
 
@@ -216,7 +217,10 @@ Default REST service to test is documented on [https://petstore.swagger.io/](htt
 
 UI tests can be run in three ways:
 
-#### 1. From command line
+#### 1. GitHub CI tool using maven
+[![Java CI with Maven](https://github.com/annakapusciak/sampleTestingProjectBP/actions/workflows/API_maven.yml/badge.svg)](https://github.com/annakapusciak/sampleTestingProjectBP/actions/workflows/API_maven.yml)
+
+#### 2. From command line
 
 [maven](https://maven.apache.org/) needs to be installed on local machine. Dedicated default maven profile
 called `API_tests` was created to execute all created web tests.
@@ -239,7 +243,7 @@ Sample for [PetsEndpointTest](src/test/java/api/PetsEndpointTest.java) test:
 mvn clean -Dtest=PetsEndpointTest -PAPI_tests test
 ```
 
-#### 2. From any IDE
+#### 3. From any IDE
 
 Tests can be run from any IDE like i.e. [IntelliJ IDEA](https://www.jetbrains.com/idea/). Then each `*Test.java` class
 from `src/test/java/api` package can be run using `run` option after clicking right mouse button on class name.
